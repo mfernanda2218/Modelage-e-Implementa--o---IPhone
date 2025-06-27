@@ -1,12 +1,14 @@
-## Modelagem e Implementação de funções num componete IPhone
+## Modelando o iPhone com UML e implementando funções: Funções de Músicas, Chamadas e Internet
 
 ### Funcionalidades a Modelar
-Reprodutor Musical
+* Reprodutor Musical
 Métodos: tocar(), pausar(), selecionarMusica(String musica)
 Aparelho Telefônico
-Métodos: ligar(String numero), atender(), iniciarCorreioVoz()
+
+* Métodos: ligar(String numero), atender(), iniciarCorreioVoz()
 Navegador na Internet
-Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
+
+* Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
 
 ### Diagrama UML
 
