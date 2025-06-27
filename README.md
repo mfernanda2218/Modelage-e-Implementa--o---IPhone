@@ -1,18 +1,39 @@
-## Getting Started
+## Modelagem e Implementação de funções num componete IPhone
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Funcionalidades a Modelar
+Reprodutor Musical
+Métodos: tocar(), pausar(), selecionarMusica(String musica)
+Aparelho Telefônico
+Métodos: ligar(String numero), atender(), iniciarCorreioVoz()
+Navegador na Internet
+Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
 
-## Folder Structure
+### Diagrama UML
 
-The workspace contains two folders by default, where:
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String exemplo)
+    }
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    class AparelhoTelefonico {
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+    }
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    class NavegadorInternet {
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarpágina()
+    }
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    class iPhone {
+    }
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
+``` 
